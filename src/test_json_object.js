@@ -1,4 +1,4 @@
-var testJasonObject = [
+var testJsonObject = [
     {
         'firstName': 'Jim',
         'lastName': 'Jones',
@@ -53,3 +53,5 @@ var testJasonObject = [
 
     }]
     //end testJsonObject
+
+    export default testJsonObject;
