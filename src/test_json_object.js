@@ -7,7 +7,9 @@ var testJsonObject = [
         'vacationHoursRemaining':'14',
         'healthPlanName':'Health Plan A',
         'startDate':'2020-01-25',
-        'directManager':'Linnea Jones'
+        'directManager':'Linnea Jones',
+        'email':'jim@theorem.com',
+        'password':'test1'
     },
     {
       'firstName': 'Samantha',
@@ -17,7 +19,9 @@ var testJsonObject = [
       'vacationHoursRemaining':'24',
       'healthPlanName':'Health Plan C',
       'startDate':'2019-09-25',
-      'directManager':'Linnea Jones'
+      'directManager':'Linnea Jones',
+      'email':'samantha@theorem.com',
+      'password':'test2'
     },
     {
       'firstName': 'Bruce',
@@ -27,7 +31,9 @@ var testJsonObject = [
       'vacationHoursRemaining':'17',
       'healthPlanName':'Health Plan B',
       'startDate':'2019-11-25',
-      'directManager':'Linnea Jones'
+      'directManager':'Linnea Jones',
+      'email':'bruce@theorem.com',
+      'password':'test3'
 
     },
     {
@@ -38,7 +44,9 @@ var testJsonObject = [
       'vacationHoursRemaining':'30',
       'healthPlanName':'Health Plan B',
       'startDate':'2018-09-25',
-      'directManager':'Toni Braxton'
+      'directManager':'Toni Braxton',
+      'email':'linnea@theorem.com',
+      'password':'test4'
 
     },
     {
@@ -49,7 +57,9 @@ var testJsonObject = [
       'vacationHoursRemaining':'19',
       'healthPlanName':'Health Plan A',
       'startDate':'2018-01-14',
-      'directManager':''
+      'directManager':'',
+      'email':'toni@theorem.com',
+      'password':'test5'
 
     }]
     //end testJsonObject

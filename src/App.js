@@ -16,14 +16,14 @@ class App extends React.Component {
     };
   }
 
-  // logData = () => {
-  //   console.log(testJsonObject);
-  // }
+//console logs are just for testing purposes.
 
-
-  componentDidMount(){
-    console.log(testJsonObject);
-  }
+  componentDidMount = async() => {
+    let masterList = testJsonObject;
+    // console.log(masterList);
+    await  this.setState({masterEmployeeList: masterList})
+    await  console.log(this.state);
+    }
 
   render(){
 
