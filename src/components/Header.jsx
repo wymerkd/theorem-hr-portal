@@ -2,6 +2,7 @@ import React from 'react';
 import '../scss/_header.scss'
 
 function Header(){ 
+  
   return(
     <div className='header'>
       <div className='theoremLogoWrapper'>

@@ -30,7 +30,7 @@ class App extends React.Component {
 
     return (
       <div>
-        < EmployeeHome />
+        < EmployeeHome selectedEmployee={this.state.selectedEmployee}/>
       </div>
         );
       }
