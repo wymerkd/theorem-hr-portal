@@ -54,10 +54,11 @@ class App extends React.Component {
 
     return (
       <div>
+        <Header/>
         <Switch>
 
-        <Route exact path='/admin/newpostform' render={()=><FeedbackSubmit onFeedbackSubmission={this.handleAddingNewFeedback}/>}/>
-        
+        <Route exact path='/feedback' render={()=><FeedbackSubmit onFeedbackSubmission={this.handleAddingNewFeedback}/>}/>
+
         </Switch>
       </div>
         );
