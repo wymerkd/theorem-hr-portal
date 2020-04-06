@@ -1,13 +1,15 @@
 //compiled stylesheets
 
+@import '_employeeDetail';
+
 @import '_employeeHome';
 
 @import '_feedbackSubmit';
 
-@import '_timeOffRequest';
-
-@import '_variables';
-
 @import '_header';
 
 @import '_quickLinks';
+
+@import '_timeOffRequest';
+
+@import '_variables';
