@@ -1,17 +1,18 @@
 @import 'variables';
 
 .header{
-  display: block;
-  width: 100%;
+  display: flex;
+  width: 100vw;
   position: relative;
 }
 
 .headerTitleWrapper{
-  display: table;
-  
 }
 
 .headerLogoWrapper{
-  display: table;
   float: left;
+}
+
+.headerUserInfo{
+  float: right;
 }
