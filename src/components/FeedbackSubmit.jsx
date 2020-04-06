@@ -10,6 +10,8 @@ export default function FeedbackSubmit(props){
   let _subject = null;
   let _content = null;
 
+//callback function for the onFeedback submission function
+
 function handleNewFeedbackSubmission(event) {
   event.preventDefault();
   props.onFeedbackSubmission({subject: _subject.value, date: new Date(), content: _content.value, feedbackid: v4()});
