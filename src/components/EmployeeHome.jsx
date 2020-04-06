@@ -9,7 +9,7 @@ function EmployeeHome(props){
 
   return(
     <div className='EmployeeHome'>
-      <Header />
+      <Header selectedEmployee = {props.selectedEmployee}/>
       <div>
         <h2>Employee Name: {props.selectedEmployee.fullName}</h2>
       </div>

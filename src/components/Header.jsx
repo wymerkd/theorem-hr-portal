@@ -2,7 +2,7 @@ import React from 'react';
 import '../scss/_header.scss'
 import { Link } from 'react-router-dom';
         
-function Header(){ 
+function Header(props){ 
   
   return(
     <div className='header'>
@@ -16,7 +16,7 @@ function Header(){
       </div>
 
       <div className='headerUserInfo'>
-        <p>User Name</p>
+        <p>{props.selectedEmployee.fullName}</p>
         <p>LogIn/Out</p>
       </div>
     </div>
