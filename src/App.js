@@ -1,4 +1,3 @@
-
 //App Fundamentals
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
@@ -10,8 +9,6 @@ import testJsonObject from './test_json_object.js';
 //Components
 import FeedbackSubmit from './components/FeedbackSubmit';
 import Header from './components/Header';
-
-
 
 
 class App extends React.Component {
