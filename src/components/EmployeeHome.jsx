@@ -9,7 +9,6 @@ function EmployeeHome(props){
 
   return(
     <div className='EmployeeHome'>
-      <Header />
       <div>
         <h2>Employee Name: {props.selectedEmployee.fullName}</h2>
       </div>
