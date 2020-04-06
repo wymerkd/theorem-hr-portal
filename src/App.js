@@ -9,6 +9,8 @@ import testJsonObject from './test_json_object.js';
 
 //Components
 import FeedbackSubmit from './components/FeedbackSubmit';
+import Header from './components/Header';
+
 
 
 
@@ -40,7 +42,7 @@ class App extends React.Component {
     //make copy of current state
     var masterEmployeeFeedbackList = this.state.employeeFeedback;
     //push new feedback into state clone variable
-    masterEmployeeFeedbackList.push({content: newFeedback.content, date: newFeedback.date, newFeedback.subject, newFeedback.feedbackid});
+    masterEmployeeFeedbackList.push({content: newFeedback.content, date: newFeedback.date, subject: newFeedback.subject, feedbackid: newFeedback.feedbackid});
     //set new state
     this.setState({employeeFeedback: masterEmployeeFeedbackList});
 
@@ -57,7 +59,7 @@ class App extends React.Component {
         <Header/>
         <Switch>
 
-        <Route exact path='/feedback' render={()=><FeedbackSubmit onFeedbackSubmission={this.handleAddingNewFeedback}/>}/>
+        <Route exact path="/feedback" render={()=><FeedbackSubmit onFeedbackSubmission={this.handleAddingNewFeedback}/>}/>
 
         </Switch>
       </div>

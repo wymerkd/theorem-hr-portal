@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Header(){
   return(
     <div>
-      <Link  to='/feedback'> Submit Feedback</Link>
+      <Link to="/feedback"> Submit Feedback</Link>
     </div>
         );
       }

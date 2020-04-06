@@ -12,7 +12,7 @@ export default function FeedbackSubmit(props){
 
 function handleNewFeedbackSubmission(event) {
   event.preventDefault();
-  props.onFeedbackCreation({subject: _subject.value, date: new Date(), content: _content.value, feedbackid: v4()});
+  props.onFeedbackSubmission({subject: _subject.value, date: new Date(), content: _content.value, feedbackid: v4()});
   _subject.value = '';
   _content.value = '';
 }
@@ -22,8 +22,8 @@ function handleNewFeedbackSubmission(event) {
           <div>
             <h2>Add Feedback </h2>
 
-            <form onSubmit={handleNewPostFormSubmission}>
-              <input style={input}
+            <form onSubmit={handleNewFeedbackSubmission}>
+              <input
                 type='text'
                 id='subject'
                 placeholder='Feedback Subject'
@@ -42,8 +42,8 @@ function handleNewFeedbackSubmission(event) {
   );
 }
 
-NewPostForm.propTypes = {
-  onPostCreation: PropTypes.func
+FeedbackSubmit.propTypes = {
+  onFeedbackSubmission: PropTypes.func
 };
 
 //need to import a function that sends feedback to email address, and to kyle's admin view component
