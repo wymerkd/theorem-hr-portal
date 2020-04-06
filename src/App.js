@@ -42,15 +42,16 @@ class App extends React.Component {
     //make copy of current state
     var masterEmployeeFeedbackList = this.state.employeeFeedback;
     //push new feedback into state clone variable
-    masterEmployeeFeedbackList.push({content: newFeedback.content, date: newFeedback.date, subject: newFeedback.subject, feedbackid: newFeedback.feedbackid});
+    masterEmployeeFeedbackList.push({content: newFeedback.content, date: newFeedback.date, subject: newFeedback.subject, feedbackid: newFeedback.feedbackid, completed: newFeedback.completed});
     //set new state
     this.setState({employeeFeedback: masterEmployeeFeedbackList});
 
     console.log(this.state.employeeFeedback);
+
+    //email myself after this
   }
 
-//we will need a 'delete feedback' method to be passed into the admin view
-//we will need a header component
+//we will need a 'delete feedback' method to be passed into the admin view (probably a find  + delete)
 
   render(){
 

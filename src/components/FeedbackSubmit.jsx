@@ -14,27 +14,31 @@ export default function FeedbackSubmit(props){
 
 function handleNewFeedbackSubmission(event) {
   event.preventDefault();
-  props.onFeedbackSubmission({subject: _subject.value, date: new Date(), content: _content.value, feedbackid: v4()});
+  props.onFeedbackSubmission({subject: _subject.value, date: new Date(), content: _content.value, feedbackid: v4(), completed: false});
   _subject.value = '';
   _content.value = '';
 }
 
   return(
     <div>
-          <div>
-            <h2>Add Feedback </h2>
+          <div className="container">
+            <h2 className="feedbackHeader">Add Feedback </h2>
 
             <form onSubmit={handleNewFeedbackSubmission}>
-              <input
-                type='text'
-                id='subject'
-                placeholder='Feedback Subject'
-                ref={(input) => {_subject = input;}}/>
+              <div className="subjectField">
+                <input
+                  type='text'
+                  id='subject'
+                  placeholder='Feedback Subject'
+                  ref={(input) => {_subject = input;}}/>
+              </div>
+              <div className="contentField">
               <textarea
                 id='content'
                 type='text'
                 placeholder="Write feedback here"
                 ref={(input) => {_content = input;}}/>
+              </div>
 
               <div>  <button type='submit'>Submit Feedback</button> </div>
             </form>
