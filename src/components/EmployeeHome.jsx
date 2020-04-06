@@ -1,3 +1,14 @@
+import React from 'react';
 import '../scss/_employeeHome.scss'
+import Header from './Header'
 
-//this is going to be the main landing page for the logged in user.
+function EmployeeHome(){
+  return(
+    <div className='EmployeeHome'>
+      <Header />
+
+    </div>
+  )
+}
+
+export default EmployeeHome;

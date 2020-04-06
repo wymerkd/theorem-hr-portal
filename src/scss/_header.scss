@@ -1,0 +1,17 @@
+@import 'variables';
+
+.header{
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.headerTitleWrapper{
+  display: table;
+  
+}
+
+.headerLogoWrapper{
+  display: table;
+  float: left;
+}
