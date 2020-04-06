@@ -1,7 +1,6 @@
-
 import React from 'react';
 import './App.scss';
-import testJsonObject from './test_json_object.js'
+import testJsonObject from './test_json_object.js';
 
 
 
@@ -29,6 +28,7 @@ class App extends React.Component {
 
     return (
       <div>
+        
       </div>
         );
       }
