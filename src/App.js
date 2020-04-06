@@ -9,7 +9,7 @@ import testJsonObject from './test_json_object.js';
 //Components
 import FeedbackSubmit from './components/FeedbackSubmit';
 import Header from './components/Header';
-
+import EmployeeHome from './components/EmployeeHome';
 
 class App extends React.Component {
 
@@ -30,7 +30,8 @@ class App extends React.Component {
     // console.log(masterList);
     await  this.setState({masterEmployeeList: masterList})
     await  console.log(this.state);
-    }
+  }
+  
 
 
 //function to add employee feedback to the employeeFeedback state variable. In the future all of this will likely live inside of an api.
@@ -55,10 +56,9 @@ class App extends React.Component {
     return (
       <div>
         <Header/>
+        < EmployeeHome selectedEmployee={this.state.selectedEmployee}/>
         <Switch>
-
         <Route exact path="/feedback" render={()=><FeedbackSubmit onFeedbackSubmission={this.handleAddingNewFeedback}/>}/>
-
         </Switch>
       </div>
         );
