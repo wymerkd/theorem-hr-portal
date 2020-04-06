@@ -55,9 +55,9 @@ class App extends React.Component {
 
     return (
       <div>
-        <Header/>
-        < EmployeeHome selectedEmployee={this.state.selectedEmployee}/>
+        <EmployeeHome selectedEmployee={this.state.selectedEmployee}/>
         <Switch>
+        <Route path="/" />
         <Route exact path="/feedback" render={()=><FeedbackSubmit onFeedbackSubmission={this.handleAddingNewFeedback}/>}/>
         </Switch>
       </div>

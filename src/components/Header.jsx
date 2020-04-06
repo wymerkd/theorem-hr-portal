@@ -6,7 +6,7 @@ function Header(){
   
   return(
     <div className='header'>
-      <Link to="/feedback"> Submit Feedback</Link>
+
       <div className='theoremLogoWrapper'>
         <img src="https://theoremadvertising.com/wp-content/uploads/2019/04/cropped-logo-1.png" alt="theorem logo"/>
       </div>

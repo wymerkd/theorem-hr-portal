@@ -1,16 +1,33 @@
+.employeeDetailWrapper {
+  background-color: lightgrey;
+  width: 80vw;
+  border: 2px solid black; }
+
 .btn {
   background-color: #BADA55;
   border: none;
   padding: .5rem 1rem;
   color: #BADA55; }
 
+.feedbackHeader {
+  color: orange;
+  padding-bottom: 4%; }
+
+.subjectField {
+  padding-bottom: 0.5%; }
+
+.container {
+  text-align: center; }
+
+.subjectField {
+  margin-bottom: 4%; }
+
 .header {
   display: flex;
   width: 100vw;
   position: relative; }
 
-.headerLogoWrapper {
-  float: left; }
-
-.headerUserInfo {
-  align-items: right; }
+.quickLinksWrapper {
+  background-color: lightgrey;
+  width: 20vw;
+  border: 2px solid black; }
