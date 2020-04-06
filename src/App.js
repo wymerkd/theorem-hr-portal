@@ -24,7 +24,8 @@ class App extends React.Component {
     // console.log(masterList);
     await  this.setState({masterEmployeeList: masterList})
     await  console.log(this.state);
-    }
+  }
+  
 
   render(){
 
