@@ -1,4 +1,5 @@
 
+import React from 'react';
 import './App.scss';
 import testJsonObject from './test_json_object.js'
 
