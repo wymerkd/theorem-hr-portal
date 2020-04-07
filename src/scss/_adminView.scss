@@ -1,0 +1,11 @@
+@import 'variables';
+
+.toggleButton {
+  background-color: $theoremLightGrey !important;
+  color: $theoremBlack !important;
+  
+  &:hover {
+    background-color: $theoremBlack !important;
+    color: $theoremLightGrey !important;
+  }
+}

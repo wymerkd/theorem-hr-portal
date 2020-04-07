@@ -23,11 +23,11 @@ export default function AdminView(props) {
           return <div key={index}>
             <p>Subject: {key.subject}</p>
             <p>Date: {key.date.toString()}</p>
-            <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>Toggle</Button>
+            <Button className="toggleButton" onClick={toggle}>Toggle</Button>
             <Collapse isOpen={isOpen}>
               <Card>
                 <CardBody>
-                {key.content}
+                  <p>{key.content}</p>
                 </CardBody>
               </Card>
             </Collapse>
