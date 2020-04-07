@@ -1,9 +1,15 @@
-import React from 'react';
-import '../scss/_adminView.scss'
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { Collapse, Button, CardBody, Card } from 'reactstrap';
+import '../scss/_adminView.scss'
 
 
 export default function AdminView(props) {
+  //Reactstrap properties for toggle viewing message content
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
+
+  //Using state from App.js
   const feedback = props.masterEmployeeFeedbackList;
 
   // Checks if feedback object is empty or not
@@ -17,7 +23,15 @@ export default function AdminView(props) {
           return <div key={index}>
             <p>Subject: {key.subject}</p>
             <p>Date: {key.date.toString()}</p>
-            <p>Content: {key.content}</p></div>;
+            <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>Toggle</Button>
+            <Collapse isOpen={isOpen}>
+              <Card>
+                <CardBody>
+                {key.content}
+                </CardBody>
+              </Card>
+            </Collapse>
+          </div>
         })}
       </div>}
       {!isFeedbackPresent && <div>
