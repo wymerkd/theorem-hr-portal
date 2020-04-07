@@ -8,9 +8,6 @@ function EmployeeHome(props){
 
   return(
     <div className='employeeHome row'>
-      <div className="headerWrapper col-12">
-        <Header selectedEmployee = {props.selectedEmployee}/>
-      </div>
       <div className='col-3'></div>
       <div className="employeeNameWrapper col-9">
         <h1>{props.selectedEmployee.fullName}</h1>
