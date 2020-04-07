@@ -1,18 +1,32 @@
 @import 'variables';
 
 .header{
-  display: flex;
-  width: 100vw;
-  position: relative;
+  // display: flex;
+  // width: 100vw;
+  // position: relative;
+
+    text-align: center;
+    padding-top: 3%;
+    font-size: 3vh;
+    // background-color: '#F4F4F4',
+    // font-family: ariel;
+    // fontColor: '#373737',
+    text-decoration: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+
 }
 
 .headerTitleWrapper{
 }
 
 .headerLogoWrapper{
-  
+
 }
 
 .headerUserInfo{
-  
+
 }

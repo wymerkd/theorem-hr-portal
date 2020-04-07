@@ -8,6 +8,7 @@ function Header(){
     <div className='header'>
       <Link to="/feedback"> Submit Feedback</Link>
       <Link to="/adminview"> Admin View</Link>
+      <Link to="/employeehome"> Employee Home </Link>
 
       <div className='theoremLogoWrapper'>
         <img src="https://theoremadvertising.com/wp-content/uploads/2019/04/cropped-logo-1.png" alt="theorem logo"/>
