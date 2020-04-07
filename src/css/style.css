@@ -1,16 +1,64 @@
-.btn {
-  background-color: #BADA55;
-  border: none;
-  padding: .5rem 1rem;
-  color: #BADA55; }
+.detailTitle {
+  text-decoration: underline; }
+
+.employeeDetail {
+  background-color: lightgrey;
+  padding: 10px;
+  padding-left: 20px; }
+
+.employeeHome {
+  display: inline-block; }
+
+.container {
+  text-align: center; }
+
+.feedbackHeader {
+  color: #262626;
+  padding-bottom: 2%;
+  font-size: 3.5em; }
+
+.subjectContainer {
+  padding-bottom: 1%; }
+
+.subjectField {
+  width: 19vw;
+  margin-bottom: 0.5%;
+  font-size: 1.5em; }
+
+.contentField {
+  width: 19vw;
+  height: 25vh;
+  margin-bottom: 1%;
+  font-size: 1.5em; }
+
+.button {
+  font-size: 1.75em;
+  border-radius: 20px;
+  padding: 0.5%; }
+
+.button:hover {
+  background-color: #262626;
+  color: white; }
 
 .header {
-  display: flex;
-  width: 100vw;
-  position: relative; }
+  text-align: center;
+  padding-top: 3%;
+  font-size: 3vh;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center; }
 
-.headerLogoWrapper {
-  float: left; }
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+  height: 12vh; }
 
-.headerUserInfo {
-  align-items: right; }
+.quickLinks {
+  background-color: lightgrey;
+  margin-left: 10px;
+  padding: 10px;
+  text-align: center; }

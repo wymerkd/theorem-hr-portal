@@ -31,7 +31,8 @@ class App extends React.Component {
     let masterList = testJsonObject;
     // console.log(masterList);
     await  this.setState({masterEmployeeList: masterList})
-    await  console.log(this.state);
+    await  this.setState({selectedEmployee: masterList[0]})
+    await  console.log('state: ', this.state);
   }
 
 
