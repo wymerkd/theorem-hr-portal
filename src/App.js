@@ -34,6 +34,8 @@ class App extends React.Component {
     await  console.log(this.state);
   }
 
+//seperate function to send an email once feedback is submitted. Adjust to address to Theorem leadership when in production. I'll need to set up an EmailJS account to get the send email feature working.
+
 
 
 //function to add employee feedback to the employeeFeedback state variable. In the future all of this will likely live inside of an api.
@@ -47,7 +49,6 @@ class App extends React.Component {
     this.setState({employeeFeedback: masterEmployeeFeedbackList});
 
     console.log(this.state.employeeFeedback);
-
     //email myself after this
   }
 
