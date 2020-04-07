@@ -11,6 +11,7 @@ import FeedbackSubmit from './components/FeedbackSubmit';
 import Header from './components/Header';
 import EmployeeHome from './components/EmployeeHome';
 import AdminView from './components/AdminView';
+import LoginPage from './components/LoginPage';
 
 class App extends React.Component {
 
@@ -67,6 +68,9 @@ class App extends React.Component {
           <Route exact path="/adminview" render={()=><AdminView masterEmployeeFeedbackList={this.state.employeeFeedback}/>}/>
 
           <Route exact path="/employeehome" render={()=><EmployeeHome EmployeeHome selectedEmployee={this.state.selectedEmployee}/>}/>
+
+          <Route exact path="/login" render={()=><LoginPage
+          selectedEmployee={this.state.selectedEmployee}/>}/>
 
         </Switch>
       </div>
