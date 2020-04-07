@@ -1,4 +1,4 @@
-@import 'variables';
+@import './variables';
 
 
 .detailTitle{
@@ -6,7 +6,8 @@
 }
 
 .employeeDetail{
-background-color: lightgrey;
-padding: 10px;
-padding-left: 20px;
+  background-color: $theoremHalfGrey;
+  padding: 10px;
+  padding-left: 20px;
+  height: 60vh;
 }
