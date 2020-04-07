@@ -22,11 +22,11 @@ function handleNewFeedbackSubmission(event) {
   return(
     <div>
           <div className="container">
-            <h2 className="feedbackHeader">Add Feedback </h2>
+            <h2 className="feedbackHeader">Submit Anonymous Feedback</h2>
 
             <form onSubmit={handleNewFeedbackSubmission}>
-              <div className="subjectField">
-                <input
+              <div className="subjectContainer">
+                <input className="subjectField"
                   type='text'
                   id='subject'
                   placeholder='Feedback Subject'

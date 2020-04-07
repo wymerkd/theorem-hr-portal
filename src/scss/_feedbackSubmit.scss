@@ -1,22 +1,22 @@
 // @import 'variables';
 
 .feedbackHeader{
-  color: orange;
-  padding-bottom: 4%;
+  color: #262626;
+  padding-bottom: 2%;
+  font-size: 3.5em;
 }
 
-.subjectField{
+.subjectContainer{
   padding-bottom: 0.5%;
 
 }
 
-.container{
-  text-align: center;
+.subjectField{
+  width: 19vw;
 }
 
-.subjectField{
-  margin-bottom: 4%;
-
+.container{
+  text-align: center;
 }
 
 .contentField{
