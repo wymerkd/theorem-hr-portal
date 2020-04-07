@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function QuickLinks(){ 
   return(
-    <div className='quickLinksWrapper'>
+    <div className='quickLinks'>
       <h3>Quick Links</h3>
       <p>Holiday PTO Calendar</p>
       <p>Policies/Procedures</p>

@@ -1,13 +1,13 @@
-.employeeDetailWrapper {
-  background-color: lightgrey;
-  width: 80vw;
-  border: 2px solid black; }
+.detailTitle {
+  text-decoration: underline; }
 
-.btn {
-  background-color: #BADA55;
-  border: none;
-  padding: .5rem 1rem;
-  color: #BADA55; }
+.employeeDetail {
+  background-color: lightgrey;
+  padding: 10px;
+  padding-left: 20px; }
+
+.employeeHome {
+  display: inline-block; }
 
 .feedbackHeader {
   color: orange;
@@ -24,10 +24,10 @@
 
 .header {
   display: flex;
-  width: 100vw;
   position: relative; }
 
-.quickLinksWrapper {
+.quickLinks {
   background-color: lightgrey;
-  width: 20vw;
-  border: 2px solid black; }
+  margin-left: 10px;
+  padding: 10px;
+  text-align: center; }

@@ -5,16 +5,22 @@ import QuickLinks from './QuickLinks'
 import EmployeeDetail from './EmployeeDetail';
 
 function EmployeeHome(props){
-  console.log('props inside EmployeeHome: ', props);
 
   return(
-    <div className='EmployeeHome'>
-      <Header selectedEmployee = {props.selectedEmployee}/>
-      <div>
-        <h2>Employee Name: {props.selectedEmployee.fullName}</h2>
+    <div className='employeeHome row'>
+      <div className="headerWrapper col-12">
+        <Header selectedEmployee = {props.selectedEmployee}/>
       </div>
-      <QuickLinks />
-      <EmployeeDetail selectedEmployee = {props.selectedEmployee}/>
+      <div className='col-3'></div>
+      <div className="employeeNameWrapper col-9">
+        <h1>{props.selectedEmployee.fullName}</h1>
+      </div>
+      <div className='quickLinksWrapper col-3'>
+        <QuickLinks />
+      </div>
+      <div className='employeeDetailWrapper col-9'>
+        <EmployeeDetail selectedEmployee = {props.selectedEmployee}/>
+      </div>
     </div>
   )
 }

@@ -1,5 +1,8 @@
-.quickLinksWrapper{
+@import 'variables';
+
+.quickLinks{
   background-color: lightgrey;
-  width: 20vw;
-  border: 2px solid black;
+  margin-left: 10px;
+  padding: 10px;
+  text-align: center;
 }
