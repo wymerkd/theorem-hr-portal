@@ -10,6 +10,7 @@ import testJsonObject from './test_json_object.js';
 import FeedbackSubmit from './components/FeedbackSubmit';
 import Header from './components/Header';
 import EmployeeHome from './components/EmployeeHome';
+import AdminView from './components/AdminView';
 
 class App extends React.Component {
 
@@ -19,7 +20,8 @@ class App extends React.Component {
     this.state = {
       masterEmployeeList: [],
       selectedEmployee: {},
-      employeeFeedback: []
+      employeeFeedback: [],
+      login: false
     };
   }
 
@@ -32,7 +34,7 @@ class App extends React.Component {
     await  this.setState({selectedEmployee: masterList[0]})
     await  console.log('state: ', this.state);
   }
-  
+
 
 
 //function to add employee feedback to the employeeFeedback state variable. In the future all of this will likely live inside of an api.
@@ -56,10 +58,15 @@ class App extends React.Component {
 
     return (
       <div>
-        <EmployeeHome selectedEmployee={this.state.selectedEmployee}/>
+        <Header/>
+
         <Switch>
-        <Route path="/" />
-        <Route exact path="/feedback" render={()=><FeedbackSubmit onFeedbackSubmission={this.handleAddingNewFeedback}/>}/>
+          <Route exact path="/feedback" render={()=><FeedbackSubmit onFeedbackSubmission={this.handleAddingNewFeedback}/>}/>
+
+          <Route exact path="/adminview" render={()=><AdminView masterEmployeeFeedbackList={this.state.employeeFeedback}/>}/>
+
+          <Route exact path="/employeehome" render={()=><EmployeeHome EmployeeHome selectedEmployee={this.state.selectedEmployee}/>}/>
+
         </Switch>
       </div>
         );

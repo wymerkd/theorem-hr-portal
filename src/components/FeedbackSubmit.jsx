@@ -22,25 +22,25 @@ function handleNewFeedbackSubmission(event) {
   return(
     <div>
           <div className="container">
-            <h2 className="feedbackHeader">Add Feedback </h2>
+            <h2 className="feedbackHeader">Submit Anonymous Feedback</h2>
 
             <form onSubmit={handleNewFeedbackSubmission}>
-              <div className="subjectField">
-                <input
+              <div className="subjectContainer">
+                <input className="subjectField"
                   type='text'
                   id='subject'
                   placeholder='Feedback Subject'
                   ref={(input) => {_subject = input;}}/>
               </div>
-              <div className="contentField">
-              <textarea
+              <div>
+              <textarea className="contentField"
                 id='content'
                 type='text'
                 placeholder="Write feedback here"
                 ref={(input) => {_content = input;}}/>
               </div>
 
-              <div>  <button type='submit'>Submit Feedback</button> </div>
+              <div>  <button className="button" type='submit'>Submit Feedback</button> </div>
             </form>
 
           </div>
