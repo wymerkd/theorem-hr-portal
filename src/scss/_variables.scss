@@ -1,5 +1,14 @@
 //variables that are shared amongst various stylesheets belong here (e.g. common theorem site colors)
 
-//add the following line to the top of your .scss file if you plan on using these variables: @import '_variables';
+//add the following line to the top of your .scss file if you plan on using these variables: 
+// @import '_variables';
 
-$test-color: #BADA55;
+$theoremLightGrey: #f3f3f3;
+$theoremMediumGrey: #999;
+$theoremBlack: #262626;
+
+
+
+// Fonts Faimlies
+$theoremAltFont: 'Poppins',sans-serif;
+$theoremFont: "Source Sans Pro",Sans-serif;
