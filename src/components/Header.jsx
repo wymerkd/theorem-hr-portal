@@ -9,10 +9,10 @@ function Header(){
   return(
   <div>
     <div className='header'>
-      <Link to="/feedback"> Submit Feedback</Link>
-      <Link to="/adminview"> Admin View</Link>
-      <Link to="/employeehome"> Employee Home </Link>
-      <Link> Log Out </Link>
+      <Link className="noUnderline" to="/feedback"> Submit Feedback</Link>
+      <Link className="noUnderline" to="/adminview"> Admin View</Link>
+      <Link className="noUnderline" to="/employeehome"> Employee Home </Link>
+      <Link className="noUnderline"> Log Out </Link>
     </div>
 
     <div className='theoremLogoWrapper'>
