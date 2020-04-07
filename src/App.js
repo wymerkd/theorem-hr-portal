@@ -20,7 +20,8 @@ class App extends React.Component {
     this.state = {
       masterEmployeeList: [],
       selectedEmployee: {},
-      employeeFeedback: []
+      employeeFeedback: [],
+      login: false
     };
   }
 
