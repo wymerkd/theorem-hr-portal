@@ -1,25 +1,40 @@
 // @import 'variables';
 
-.feedbackHeader{
-  color: orange;
-  padding-bottom: 4%;
-}
-
-.subjectField{
-  padding-bottom: 0.5%;
-
-}
-
 .container{
   text-align: center;
 }
 
-.subjectField{
-  margin-bottom: 4%;
+.feedbackHeader{
+  color: #262626;
+  padding-bottom: 2%;
+  font-size: 3.5em;
+}
+
+.subjectContainer{
+  padding-bottom: 1%;
 
 }
 
+.subjectField{
+  width: 19vw;
+  margin-bottom: 0.5%;
+  font-size: 1.5em;
+}
+
 .contentField{
+  width: 19vw;
+  height: 25vh;
+  margin-bottom: 1%;
+  font-size: 1.5em;
+}
 
+.button {
+  font-size: 1.75em;
+  border-radius: 20px;
+  padding: 0.5%;
+}
 
+.button:hover{
+  background-color: #262626;
+  color: white;
 }

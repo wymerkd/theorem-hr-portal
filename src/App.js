@@ -20,7 +20,8 @@ class App extends React.Component {
     this.state = {
       masterEmployeeList: [],
       selectedEmployee: {},
-      employeeFeedback: []
+      employeeFeedback: [],
+      login: false
     };
   }
 
@@ -57,11 +58,13 @@ class App extends React.Component {
     return (
       <div>
         <Header/>
-        < EmployeeHome selectedEmployee={this.state.selectedEmployee}/>
-        <Switch>
-        <Route exact path="/feedback" render={()=><FeedbackSubmit onFeedbackSubmission={this.handleAddingNewFeedback}/>}/>
 
-        <Route exact path="/adminview" render={()=><AdminView masterEmployeeFeedbackList={this.state.employeeFeedback}/>}/>
+        <Switch>
+          <Route exact path="/feedback" render={()=><FeedbackSubmit onFeedbackSubmission={this.handleAddingNewFeedback}/>}/>
+
+          <Route exact path="/adminview" render={()=><AdminView masterEmployeeFeedbackList={this.state.employeeFeedback}/>}/>
+
+          <Route exact path="/employeehome" render={()=><EmployeeHome EmployeeHome selectedEmployee={this.state.selectedEmployee}/>}/>
 
         </Switch>
       </div>
