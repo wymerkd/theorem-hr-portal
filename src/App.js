@@ -54,6 +54,22 @@ class App extends React.Component {
     //email myself after this
   }
 
+//Login Function:
+
+  handleLogin = (loginCredentials) => {
+    var copyMasterEmployeeList = this.state.masterEmployeeList;
+    var copySelectedEmployee = this.state.selectedEmployee;
+
+    for(var i=0;i<copyMasterEmployeeList.length;i++){
+      if(loginCredentials.email === copyMasterEmployeeList[i].email && loginCredentials.password === copyMasterEmployeeList[i].password){
+        copySelectedEmployee = copyMasterEmployeeList[i];
+        this.setState({selectedEmployee: copySelectedEmployee});
+        this.setState({login: true});
+      }
+    }
+      return "Your email or password are incorrect";
+  }
+
 //we will need a 'delete feedback' method to be passed into the admin view (probably a find  + delete)
 
   render(){
