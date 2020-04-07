@@ -32,15 +32,15 @@ function handleNewFeedbackSubmission(event) {
                   placeholder='Feedback Subject'
                   ref={(input) => {_subject = input;}}/>
               </div>
-              <div className="contentField">
-              <textarea
+              <div>
+              <textarea className="contentField"
                 id='content'
                 type='text'
                 placeholder="Write feedback here"
                 ref={(input) => {_content = input;}}/>
               </div>
 
-              <div>  <button type='submit'>Submit Feedback</button> </div>
+              <div>  <button className="button" type='submit'>Submit Feedback</button> </div>
             </form>
 
           </div>
