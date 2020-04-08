@@ -1,0 +1,36 @@
+@import 'variables';
+
+.loginHeader{
+  color: #262626;
+  padding-bottom: 3%;
+  font-size: 3.5em;
+}
+
+
+.emailField{
+  margin-bottom: 2vh;
+  width: 9vw;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.passwordField{
+  margin-bottom: 2vh;
+  margin-top: 3vh;
+  width: 9vw;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.loginButton {
+  font-size: 1.75em;
+  margin-top: 1.75vh;
+  border-radius: 20px;
+  padding: 1%;
+  width: 4vw;
+}
+
+.loginButton:hover{
+  background-color: #262626;
+  color: white;
+}
