@@ -90,7 +90,7 @@ class App extends React.Component {
 
     return (
       <div>
-        <Header/>
+        <Header onLogout={this.handleLogout}/>
 
         <Switch>
           <Route exact path="/feedback" render={()=><FeedbackSubmit onFeedbackSubmission={this.handleAddingNewFeedback}/>}/>

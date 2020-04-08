@@ -1,10 +1,17 @@
 import React from 'react';
 import '../scss/_header.scss'
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 //need to add a log out button
 
-function Header(){
+export default function Header(props){
+
+
+  function logoutCallback(){
+    props.onLogout();
+
+  }
 
   return(
   <div>
@@ -13,6 +20,7 @@ function Header(){
       <Link className="noUnderline" to="/adminview"> Admin View</Link>
       <Link className="noUnderline" to="/employeehome"> Employee Home </Link>
       <Link className="noUnderline" to="/login"> Log Out </Link>
+      <button onClick={logoutCallback}> Log Out Real </button>
     </div>
 
     <div className='theoremLogoWrapper'>
@@ -24,4 +32,6 @@ function Header(){
   )
 }
 
-export default Header
+Header.propTypes = {
+  onLogout: PropTypes.func,
+};
