@@ -32,7 +32,11 @@ class App extends React.Component {
     let masterList = testJsonObject;
     // console.log(masterList);
     await  this.setState({masterEmployeeList: masterList})
-    await  this.setState({selectedEmployee: masterList[0]})
+
+    // test selected employee for testing
+    await  this.setState({selectedEmployee: masterList[3]})
+    await  console.log('state: ', this.state);
+
   }
 
 //seperate function to send an email once feedback is submitted. Adjust to address to Theorem leadership when in production. I'll need to set up an EmailJS account to get the send email feature working.
@@ -52,6 +56,7 @@ class App extends React.Component {
     console.log(this.state.employeeFeedback);
     //email myself after this
   }
+
 
 //need to add logout function
 
@@ -94,13 +99,13 @@ class App extends React.Component {
 
         <Switch>
           <Route exact path="/feedback" render={()=><FeedbackSubmit onFeedbackSubmission={this.handleAddingNewFeedback}/>}/>
-
-          <Route exact path="/adminview" render={()=><AdminView masterEmployeeFeedbackList={this.state.employeeFeedback}/>}/>
-
           <Route exact path="/employeehome" render={()=><EmployeeHome selectedEmployee={this.state.selectedEmployee}/>}/>
-
           <Route exact path="/login" render={()=><LoginPage
           selectedEmployee={this.state.selectedEmployee}login={this.state.login} onHandleLogin={this.handleLogin}/>}/>
+          <Route exact path="/adminview" render={() => <AdminView masterEmployeeFeedbackList={this.state.employeeFeedback} />} />
+
+
+
 
         </Switch>
       </div>

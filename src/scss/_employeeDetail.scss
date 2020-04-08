@@ -1,12 +1,34 @@
-@import 'variables';
+@import './variables';
 
 
-.detailTitle{
-  text-decoration: underline;
-}
 
 .employeeDetail{
-background-color: lightgrey;
-padding: 10px;
-padding-left: 20px;
+  color: $theoremBlack;
+  font-family: $theoremFont;
+  background-color: $theoremHalfGrey;
+  padding: 1%;
+  padding-left: 2%;
+  height: 70vh;
+
+  h3{
+    margin-bottom: 5vh;
+    font-weight: 400;
+    font-size: 4vh;
+  }
+
+  h4{
+    font-size: 3vh;
+  }
+
+  .employeeAttribute{
+    font-weight: 300;
+  }
+}
+
+.triangle{
+  height: 8vh;
+  float: right;
+  position: absolute;
+  right: 2vw;
+  top: 1vh;
 }
