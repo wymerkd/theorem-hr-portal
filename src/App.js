@@ -31,6 +31,7 @@ class App extends React.Component {
     let masterList = testJsonObject;
     // console.log(masterList);
     await  this.setState({masterEmployeeList: masterList})
+    // test selected employee for testing
     await  this.setState({selectedEmployee: masterList[0]})
     await  console.log('state: ', this.state);
   }
