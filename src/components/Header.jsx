@@ -1,28 +1,31 @@
 import React from 'react';
 import '../scss/_header.scss'
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+
+//Login Status Header Components
+
+import LoggedInHeader from './LoggedInHeader';
+import LoggedOutHeader from './LoggedOutHeader';
 
 //need to add a log out button
 
-function Header(){
-
-  return(
-  <div>
-    <div className='header'>
-    <div className='theoremLogoWrapper'>
-      <img className='logo' src="https://theoremadvertising.com/wp-content/uploads/2019/04/cropped-logo-1.png" alt="theorem logo"/>
-    </div>
-      <Link className="noUnderline" to="/feedback"> Submit Feedback</Link>
-      <Link className="noUnderline" to="/adminview"> Admin View</Link>
-      <Link className="noUnderline" to="/employeehome"> Employee Home </Link>
-      <Link className="noUnderline"> Log Out </Link>
-    </div>
+export default function Header(props){
 
 
-  </div>
+  function logoutCallback(){
+    props.onLogout();
+  }
 
-
-  )
+  if (props.login){
+    return <LoggedInHeader copyOnLogout = {props.onLogout}/>
+  }
+  else {
+    return <LoggedOutHeader/>
+  }
 }
 
-export default Header
+Header.propTypes = {
+  onLogout: PropTypes.func,
+  login: PropTypes.bool
+};
