@@ -54,23 +54,26 @@ class App extends React.Component {
     //email myself after this
   }
 
-//Login Function:
+//need to add logout function 
+
+//Login Function (untested):
 
   handleLogin = (loginCredentials) => {
     var copyMasterEmployeeList = this.state.masterEmployeeList;
     var copySelectedEmployee = this.state.selectedEmployee;
+    var copyLogin = this.state.login;
 
     for(var i=0;i<copyMasterEmployeeList.length;i++){
       if(loginCredentials.email === copyMasterEmployeeList[i].email && loginCredentials.password === copyMasterEmployeeList[i].password){
         copySelectedEmployee = copyMasterEmployeeList[i];
+        copyLogin = true;
         this.setState({selectedEmployee: copySelectedEmployee});
-        this.setState({login: true});
+        this.setState({login: copyLogin});
       }
     }
       return "Your email or password are incorrect";
   }
 
-//we will need a 'delete feedback' method to be passed into the admin view (probably a find  + delete)
 
   render(){
 
