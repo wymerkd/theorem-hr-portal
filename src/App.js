@@ -11,6 +11,7 @@ import FeedbackSubmit from './components/FeedbackSubmit';
 import Header from './components/Header';
 import EmployeeHome from './components/EmployeeHome';
 import AdminView from './components/AdminView';
+import LoginPage from './components/LoginPage';
 
 class App extends React.Component {
 
@@ -32,7 +33,6 @@ class App extends React.Component {
     // console.log(masterList);
     await  this.setState({masterEmployeeList: masterList})
     await  this.setState({selectedEmployee: masterList[0]})
-    await  console.log('state: ', this.state);
   }
 
 //seperate function to send an email once feedback is submitted. Adjust to address to Theorem leadership when in production. I'll need to set up an EmailJS account to get the send email feature working.
@@ -53,20 +53,54 @@ class App extends React.Component {
     //email myself after this
   }
 
-//we will need a 'delete feedback' method to be passed into the admin view (probably a find  + delete)
+//need to add logout function
+
+  handleLogout = async () => {
+    var resetSelectedEmployee = {};
+    var resetLoginStatus = false;
+    await this.setState({selectedEmployee: resetSelectedEmployee});
+    await this.setState({login: resetLoginStatus});
+    await console.log(this.state.login);
+    await console.log(this.state.selectedEmployee);
+    await console.log('employee sucessfully logged out');
+  }
+
+//Login Function (untested):
+
+  handleLogin = async (loginCredentials) => {
+    var copyMasterEmployeeList = this.state.masterEmployeeList;
+    var copySelectedEmployee = this.state.selectedEmployee;
+    var copyLogin = true;
+
+    for(var i=0;i<copyMasterEmployeeList.length;i++){
+      if(loginCredentials.email === copyMasterEmployeeList[i].email && loginCredentials.password === copyMasterEmployeeList[i].password){
+        copySelectedEmployee = copyMasterEmployeeList[i];
+        // copyLogin = true;
+      await this.setState({selectedEmployee: copySelectedEmployee});
+      await this.setState({login: copyLogin});
+      await console.log(this.state.login);
+      await console.log(this.state.selectedEmployee);
+      await console.log('employee has logged in');
+      }
+    }
+  }
+
 
   render(){
 
     return (
       <div>
-        <Header/>
+        <Header onLogout={this.handleLogout} login={this.state.login}/>
 
         <Switch>
           <Route exact path="/feedback" render={()=><FeedbackSubmit onFeedbackSubmission={this.handleAddingNewFeedback}/>}/>
 
           <Route exact path="/adminview" render={()=><AdminView masterEmployeeFeedbackList={this.state.employeeFeedback}/>}/>
 
-          <Route exact path="/employeehome" render={()=><EmployeeHome EmployeeHome selectedEmployee={this.state.selectedEmployee}/>}/>
+          <Route exact path="/employeehome" render={()=><EmployeeHome selectedEmployee={this.state.selectedEmployee}/>}/>
+
+          <Route exact path="/login" render={()=><LoginPage
+          selectedEmployee={this.state.selectedEmployee}login={this.state.login} onHandleLogin={this.handleLogin}/>}/>
 
         </Switch>
       </div>
