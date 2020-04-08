@@ -2,6 +2,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../scss/_loginPage.scss';
+import { Link } from 'react-router-dom';
+
+
 
 
 
@@ -10,21 +13,14 @@ export default function LoginPage(props){
   let _email = null;
   let _password = null;
 
-//callback function for the onFeedback submission function
-//write handle login submission function similar to the one below
-
-// function handleNewFeedbackSubmission(event) {
-//   event.preventDefault();
-//   props.onFeedbackSubmission({subject: _subject.value, date: new Date(), content: _content.value, feedbackid: v4(), completed: false});
-//   _subject.value = '';
-//   _content.value = '';
-// }
-
 function onHandleLoginCallback(event){
   event.preventDefault();
   props.onHandleLogin({email: _email.value, password: _password.value});
+
   _email.value = '';
   _password.value = '';
+
+
 }
 
   return(
@@ -48,9 +44,18 @@ function onHandleLoginCallback(event){
                 ref={(input) => {_password = input;}}/>
               </div>
 
-              <div>  <button className="loginButton" type='submit'>Login</button> </div>
-            </form>
+              <div>
 
+                  <button
+                  className="loginButton"
+                  type='submit'>
+                  Login
+                  </button>
+
+
+              </div>
+            </form>
+            
           </div>
         </div>
   );

@@ -33,7 +33,6 @@ class App extends React.Component {
     // console.log(masterList);
     await  this.setState({masterEmployeeList: masterList})
     await  this.setState({selectedEmployee: masterList[0]})
-    await  console.log('state: ', this.state);
   }
 
 //seperate function to send an email once feedback is submitted. Adjust to address to Theorem leadership when in production. I'll need to set up an EmailJS account to get the send email feature working.
@@ -81,6 +80,7 @@ class App extends React.Component {
       await this.setState({login: copyLogin});
       await console.log(this.state.login);
       await console.log(this.state.selectedEmployee);
+      await console.log('employee has logged in');
       }
     }
   }
@@ -90,7 +90,7 @@ class App extends React.Component {
 
     return (
       <div>
-        <Header onLogout={this.handleLogout}/>
+        <Header onLogout={this.handleLogout} login={this.state.login}/>
 
         <Switch>
           <Route exact path="/feedback" render={()=><FeedbackSubmit onFeedbackSubmission={this.handleAddingNewFeedback}/>}/>
