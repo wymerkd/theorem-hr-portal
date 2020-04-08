@@ -2,13 +2,13 @@
 
 .employeeHome{
   display: inline-block;
+  width: 100vw;
 }
 
 .employeeNameWrapper{
-}
+  font-family: $theoremFont;
 
-.headerWraper{
-}
-
-.quickLinksWrapper{
+  h1{
+    font-size: 6vh;
+  }
 }

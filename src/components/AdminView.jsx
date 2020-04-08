@@ -9,6 +9,7 @@ export default function AdminView(props) {
   const feedback = props.masterEmployeeFeedbackList;
 
   // Checks if feedback array is empty or not
+
   const isFeedbackPresent = (feedback.length > 0) ? true : false;
 
   return (

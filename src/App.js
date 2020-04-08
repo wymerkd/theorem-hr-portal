@@ -31,7 +31,8 @@ class App extends React.Component {
     let masterList = testJsonObject;
     // console.log(masterList);
     await  this.setState({masterEmployeeList: masterList})
-    await  this.setState({selectedEmployee: masterList[0]})
+    // test selected employee for testing
+    await  this.setState({selectedEmployee: masterList[3]})
     await  console.log('state: ', this.state);
   }
 
@@ -56,6 +57,10 @@ class App extends React.Component {
 //we will need a 'delete feedback' method to be passed into the admin view (probably a find  + delete)
   
 
+  testFunction = () => {
+    console.log('test function says i made it!');
+  }
+
   render(){
 
     return (
@@ -65,7 +70,9 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/feedback" render={()=><FeedbackSubmit onFeedbackSubmission={this.handleAddingNewFeedback}/>}/>
 
+
           <Route exact path="/adminview" render={() => <AdminView masterEmployeeFeedbackList={this.state.employeeFeedback} />} />
+
 
           {/* <Route exact path="/adminview" render={() => <AdminView
           onDelete={this.handleDelete} />} /> */}
