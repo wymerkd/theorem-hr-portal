@@ -19,9 +19,8 @@ function onHandleLoginCallback(event){
 
   _email.value = '';
   _password.value = '';
-
-
 }
+
 
   return(
     <div>
@@ -48,14 +47,15 @@ function onHandleLoginCallback(event){
 
                   <button
                   className="loginButton"
-                  type='submit'>
+                  type='submit'
+                  >
                   Login
                   </button>
 
 
               </div>
             </form>
-            
+
           </div>
         </div>
   );
