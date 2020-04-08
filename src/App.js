@@ -95,7 +95,7 @@ class App extends React.Component {
 
     return (
       <div>
-        <Header onLogout={this.handleLogout} login={this.state.login}/>
+        <Header onLogout={this.handleLogout} login={this.state.login} selectedEmployee={this.state.selectedEmployee}/>
 
         <Switch>
           <Route exact path="/feedback" render={()=><FeedbackSubmit onFeedbackSubmission={this.handleAddingNewFeedback}/>}/>
