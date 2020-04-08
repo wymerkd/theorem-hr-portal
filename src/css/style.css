@@ -99,3 +99,18 @@
 
 .feedbackLink {
   color: #262626; }
+
+.toggleButton {
+  background-color: #f3f3f3 !important;
+  color: #262626 !important; }
+  .toggleButton:hover {
+    background-color: #262626 !important;
+    color: #f3f3f3 !important; }
+
+.deleteButton {
+  background-color: #c10606 !important;
+  color: #f3f3f3 !important; }
+
+.card {
+  min-width: 30vw !important;
+  max-width: 30vw; }
