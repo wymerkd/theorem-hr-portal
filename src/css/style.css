@@ -55,7 +55,7 @@
 .button {
   font-size: 1.75em;
   border-radius: 20px;
-  padding: 0.5%; }
+  padding: 1.5%; }
 
 .button:hover {
   background-color: #262626;
@@ -71,12 +71,13 @@
   grid-template-rows: auto;
   justify-items: center; }
 
-.logo {
+.theoremLogo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 5%;
-  height: 12vh; }
+  padding-top: 1%;
+  height: 12vh;
+  margin-bottom: 2vh; }
 
 .noUnderline {
   text-decoration: none;
