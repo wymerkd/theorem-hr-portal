@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 export default function AdminView(props) {
   const feedback = props.masterEmployeeFeedbackList;
-
+  
   // Checks if feedback object is empty or not
   const isFeedbackPresent = (feedback.length > 0) ? true : false;
 

@@ -1,20 +1,25 @@
 .employeeDetail {
+  color: #262626;
   font-family: "Source Sans Pro", Sans-serif;
   background-color: #ededed;
-  padding: 10px;
-  padding-left: 20px;
+  padding: 1%;
+  padding-left: 2%;
   height: 60vh; }
   .employeeDetail h3 {
     margin-bottom: 5vh;
-    font-weight: 600; }
+    font-weight: 400;
+    font-size: 4vh; }
+  .employeeDetail h4 {
+    font-size: 3vh; }
   .employeeDetail .employeeAttribute {
-    font-weight: 250; }
-  .employeeDetail .triangle {
-    height: 5vh;
-    float: right;
-    position: absolute;
-    right: 2vw;
-    bottom: 1vh; }
+    font-weight: 300; }
+
+.triangle {
+  height: 8vh;
+  float: right;
+  position: absolute;
+  right: 2vw;
+  top: 1vh; }
 
 .employeeHome {
   display: inline-block;
