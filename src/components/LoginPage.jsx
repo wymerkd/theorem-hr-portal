@@ -21,8 +21,10 @@ function onHandleLoginCallback(event){
   _password.value = '';
 }
 
-
+if (props.login === false){
   return(
+
+
     <div>
           <div className="container">
             <h2 className="loginHeader">Login</h2>
@@ -58,7 +60,12 @@ function onHandleLoginCallback(event){
 
           </div>
         </div>
+
   );
+}
+else {
+  return("");
+}
 }
 
 LoginPage.propTypes = {
