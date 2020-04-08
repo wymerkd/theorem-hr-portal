@@ -28,7 +28,7 @@ export default function AdminView(props) {
           return <tbody key={index}>
             <tr>
               <td>{item.subject}</td>
-              <td>{item.date.toString()}</td>
+              <td>{item.date.toString().slice(0, 21)}</td>
               <td><Button className="toggleButton" id={`item${item.feedbackid}`}>View Content</Button></td>
               <td><Button className="deleteButton">Delete</Button></td>
             </tr>
