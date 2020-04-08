@@ -56,6 +56,16 @@ class App extends React.Component {
 
 //need to add logout function
 
+  handleLogout = async () => {
+    var resetSelectedEmployee = {};
+    var resetLoginStatus = false;
+    await this.setState({selectedEmployee: resetSelectedEmployee});
+    await this.setState({login: resetLoginStatus});
+    await console.log(this.state.login);
+    await console.log(this.state.selectedEmployee);
+    await console.log('employee sucessfully logged out');
+  }
+
 //Login Function (untested):
 
   handleLogin = async (loginCredentials) => {
