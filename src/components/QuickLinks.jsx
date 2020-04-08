@@ -8,6 +8,7 @@ function QuickLinks(){
       <h3>Quick Links</h3>
       <p>Holiday PTO Calendar</p>
       <p>Policies & Procedures</p>
+      <p>401k Documentation</p>
       <Link className='feedbackLink' to="/feedback"> Submit Feedback</Link>
     </div>
   )
