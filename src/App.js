@@ -54,7 +54,7 @@ class App extends React.Component {
     //email myself after this
   }
 
-//need to add logout function 
+//need to add logout function
 
 //Login Function (untested):
 
@@ -63,15 +63,17 @@ class App extends React.Component {
     var copySelectedEmployee = this.state.selectedEmployee;
     var copyLogin = this.state.login;
 
-    for(var i=0;i<copyMasterEmployeeList.length;i++){
-      if(loginCredentials.email === copyMasterEmployeeList[i].email && loginCredentials.password === copyMasterEmployeeList[i].password){
-        copySelectedEmployee = copyMasterEmployeeList[i];
-        copyLogin = true;
-        this.setState({selectedEmployee: copySelectedEmployee});
-        this.setState({login: copyLogin});
-      }
-    }
-      return "Your email or password are incorrect";
+    // for(var i=0;i<copyMasterEmployeeList.length;i++){
+    //   if(loginCredentials.email === copyMasterEmployeeList[i].email && loginCredentials.password === copyMasterEmployeeList[i].password){
+    //     copySelectedEmployee = copyMasterEmployeeList[i];
+    //     copyLogin = true;
+    //     this.setState({selectedEmployee: copySelectedEmployee});
+    //     this.setState({login: copyLogin});
+    //     console.log(this.state.login);
+    //     console.log(this.state.selectedEmployee);
+    //   }
+    // }
+    console.log('function called');
   }
 
 
@@ -86,10 +88,10 @@ class App extends React.Component {
 
           <Route exact path="/adminview" render={()=><AdminView masterEmployeeFeedbackList={this.state.employeeFeedback}/>}/>
 
-          <Route exact path="/employeehome" render={()=><EmployeeHome EmployeeHome selectedEmployee={this.state.selectedEmployee}/>}/>
+          <Route exact path="/employeehome" render={()=><EmployeeHome selectedEmployee={this.state.selectedEmployee}/>}/>
 
           <Route exact path="/login" render={()=><LoginPage
-          selectedEmployee={this.state.selectedEmployee}/>}/>
+          selectedEmployee={this.state.selectedEmployee}login={this.state.login} onHandleLogin={this.handleLogin}/>}/>
 
         </Switch>
       </div>

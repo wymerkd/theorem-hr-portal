@@ -5,7 +5,7 @@ import '../scss/_loginPage.scss';
 
 
 
-export default function FeedbackSubmit(props){
+export default function LoginPage(props){
 
   let _email = null;
   let _password = null;
@@ -20,12 +20,19 @@ export default function FeedbackSubmit(props){
 //   _content.value = '';
 // }
 
+function onHandleLoginCallback(event){
+  event.preventDefault();
+  props.onHandleLogin({email: _email.value, password: _password.value});
+  _email.value = '';
+  _password.value = '';
+}
+
   return(
     <div>
           <div className="container">
             <h2 className="loginHeader">Login</h2>
 
-            <form>
+            <form onSubmit={onHandleLoginCallback}>
               <div className="emailContainer">
                 <input className="emailField"
                   type='text'
@@ -49,8 +56,10 @@ export default function FeedbackSubmit(props){
   );
 }
 
-FeedbackSubmit.propTypes = {
-  // onFeedbackSubmission: PropTypes.func
+LoginPage.propTypes = {
+  onHandleLogin: PropTypes.func,
+  login: PropTypes.bool,
+  selectedEmployee: PropTypes.object
 };
 
 //need to import a function that sends feedback to email address, and to kyle's admin view component
