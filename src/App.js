@@ -58,22 +58,21 @@ class App extends React.Component {
 
 //Login Function (untested):
 
-  handleLogin = (loginCredentials) => {
+  handleLogin = async (loginCredentials) => {
     var copyMasterEmployeeList = this.state.masterEmployeeList;
     var copySelectedEmployee = this.state.selectedEmployee;
-    var copyLogin = this.state.login;
+    var copyLogin = true;
 
-    // for(var i=0;i<copyMasterEmployeeList.length;i++){
-    //   if(loginCredentials.email === copyMasterEmployeeList[i].email && loginCredentials.password === copyMasterEmployeeList[i].password){
-    //     copySelectedEmployee = copyMasterEmployeeList[i];
-    //     copyLogin = true;
-    //     this.setState({selectedEmployee: copySelectedEmployee});
-    //     this.setState({login: copyLogin});
-    //     console.log(this.state.login);
-    //     console.log(this.state.selectedEmployee);
-    //   }
-    // }
-    console.log('function called');
+    for(var i=0;i<copyMasterEmployeeList.length;i++){
+      if(loginCredentials.email === copyMasterEmployeeList[i].email && loginCredentials.password === copyMasterEmployeeList[i].password){
+        copySelectedEmployee = copyMasterEmployeeList[i];
+        // copyLogin = true;
+      await this.setState({selectedEmployee: copySelectedEmployee});
+      await this.setState({login: copyLogin});
+      await console.log(this.state.login);
+      await console.log(this.state.selectedEmployee);
+      }
+    }
   }
 
 
