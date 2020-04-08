@@ -54,6 +54,7 @@ class App extends React.Component {
   }
 
 //we will need a 'delete feedback' method to be passed into the admin view (probably a find  + delete)
+  
 
   render(){
 
@@ -64,9 +65,12 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/feedback" render={()=><FeedbackSubmit onFeedbackSubmission={this.handleAddingNewFeedback}/>}/>
 
-          <Route exact path="/adminview" render={()=><AdminView masterEmployeeFeedbackList={this.state.employeeFeedback}/>}/>
+          <Route exact path="/adminview" render={() => <AdminView masterEmployeeFeedbackList={this.state.employeeFeedback} />} />
 
-          <Route exact path="/employeehome" render={()=><EmployeeHome EmployeeHome selectedEmployee={this.state.selectedEmployee}/>}/>
+          {/* <Route exact path="/adminview" render={() => <AdminView
+          onDelete={this.handleDelete} />} /> */}
+
+          <Route exact path="/employeehome" render={() => <EmployeeHome EmployeeHome selectedEmployee={this.state.selectedEmployee} />} />
 
         </Switch>
       </div>

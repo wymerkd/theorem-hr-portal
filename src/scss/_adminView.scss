@@ -1,5 +1,7 @@
 @import 'variables';
 
+
+//!important rule used to override built in reactstrap styles 
 .toggleButton {
   background-color: $theoremLightGrey !important;
   color: $theoremBlack !important;
@@ -8,4 +10,14 @@
     background-color: $theoremBlack !important;
     color: $theoremLightGrey !important;
   }
+}
+
+.deleteButton {
+  background-color:rgb(193, 6, 6) !important;
+  color: $theoremLightGrey !important;
+}
+
+.card {
+  min-width: 30vw!important;
+  max-width: 30vw;
 }
