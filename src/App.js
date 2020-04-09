@@ -1,6 +1,7 @@
 //App Fundamentals
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import emailjs from 'emailjs-com';
 import './App.scss';
 
 //Dummy employee data object
@@ -52,6 +53,9 @@ class App extends React.Component {
     masterEmployeeFeedbackList.push({content: newFeedback.content, date: newFeedback.date, subject: newFeedback.subject, feedbackid: newFeedback.feedbackid, completed: newFeedback.completed});
     //set new state
     this.setState({employeeFeedback: masterEmployeeFeedbackList});
+
+    //send notification email (will need to adjust to leadership team email) now sends to and from theorem.feedback@gmail.com
+    emailjs.send("theorem_feedback", "theoremfeedbacktemplate", {"feedback": newFeedback.content,"subject": newFeedback.subject},"user_68NBqR4xN55i2XxXh3srI")
 
     console.log(this.state.employeeFeedback);
     //email myself after this
