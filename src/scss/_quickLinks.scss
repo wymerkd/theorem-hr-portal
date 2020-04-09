@@ -16,9 +16,20 @@
       margin-bottom: 3vh;
       font-weight: 400;
     }
+
+    p {
+      &:hover {
+        font-weight: 400;
+      }
+    }
 }
 
 .feedbackLink{
   color: $theoremBlack;
 
+    &:hover {
+      text-decoration: none;
+      color: $theoremBlack;
+      font-weight: 400;
+    }
 }
