@@ -18,7 +18,7 @@ export default function Header(props){
   }
 
   if (props.login){
-    return <LoggedInHeader copyOnLogout = {props.onLogout}/>
+    return <LoggedInHeader copyOnLogout = {props.onLogout} selectedEmployee={props.selectedEmployee}/>
   }
   else {
     return <LoggedOutHeader/>

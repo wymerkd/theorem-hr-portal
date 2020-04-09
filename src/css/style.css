@@ -55,32 +55,11 @@
 .button {
   font-size: 1.75em;
   border-radius: 20px;
-  padding: 0.5%; }
+  padding: 1.5%; }
 
 .button:hover {
   background-color: #262626;
   color: white; }
-
-.header {
-  text-align: center;
-  padding-top: 3%;
-  font-size: 3vh;
-  text-decoration: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  justify-items: center; }
-
-.logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 5%;
-  height: 12vh; }
-
-.noUnderline {
-  text-decoration: none;
-  color: #262626; }
 
 .quickLinks {
   color: #262626;
@@ -99,3 +78,18 @@
 
 .feedbackLink {
   color: #262626; }
+
+.toggleButton {
+  background-color: #f3f3f3 !important;
+  color: #262626 !important; }
+  .toggleButton:hover {
+    background-color: #262626 !important;
+    color: #f3f3f3 !important; }
+
+.deleteButton {
+  background-color: #c10606 !important;
+  color: #f3f3f3 !important; }
+
+.card {
+  min-width: 30vw !important;
+  max-width: 30vw; }

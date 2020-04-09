@@ -34,7 +34,7 @@ class App extends React.Component {
     await  this.setState({masterEmployeeList: masterList})
 
     // test selected employee for testing
-    await  this.setState({selectedEmployee: masterList[3]})
+    await  this.setState({})
     await  console.log('state: ', this.state);
 
   }
@@ -101,7 +101,7 @@ class App extends React.Component {
 
     return (
       <div>
-        <Header onLogout={this.handleLogout} login={this.state.login}/>
+        <Header onLogout={this.handleLogout} login={this.state.login} selectedEmployee={this.state.selectedEmployee}/>
 
         <Switch>
           <Route exact path="/feedback" render={()=><FeedbackSubmit onFeedbackSubmission={this.handleAddingNewFeedback}/>}/>

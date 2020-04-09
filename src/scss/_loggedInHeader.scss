@@ -1,27 +1,30 @@
-@import 'variables';
-
 .header{
-    text-align: center;
-    padding-top: 3%;
-    font-size: 3vh;
-    text-decoration: none;
+  text-align: center;
+  font-size: 3vh;
+  text-decoration: none;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
 }
 
-.theoremLogo{
+.logName{
+  font-size: 2vh;
+}
+
+.logo{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 1%;
-  height: 12vh;
-  margin-bottom: 2vh;
+  padding-top: 5%;
+  height: 10vh;
 }
 
 .noUnderline{
   text-decoration: none;
   color: #262626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
