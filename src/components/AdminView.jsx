@@ -7,12 +7,12 @@ import '../scss/_adminView.scss'
 export default function AdminView(props) {
   //Using state of masterEmployeeFeedbackList from App.js and storing in new variable
   const feedback = props.masterEmployeeFeedbackList;
-  
+
   // console.log(feedback[0].feedbackid)
 
   // Checks if feedback array is empty or not
   const isFeedbackPresent = (feedback.length > 0) ? true : false;
-  
+
 
   return (
     // Short circuit evaluation displays corresponding div depending on result of feedback condition
@@ -33,7 +33,7 @@ export default function AdminView(props) {
               <td>{item.subject}</td>
               <td>{item.date.toString().slice(0, 21)}</td>
               <td><Button className="toggleButton" id={`item${item.feedbackid}`}>View Content</Button></td>
-              <td><Button className="deleteButton" onClick={props.onHandleDelete}>Delete</Button></td>
+              <td><Button className="deleteButton" onClick={() => {if (window.confirm('Are you sure you wish to delete this item?')) props.onHandleDelete(item.feedbackid)}} >Delete</Button></td>
             </tr>
             <span>
             <tr>
@@ -72,3 +72,4 @@ AdminView.propTypes = {
 };
 
 
+// <button style={buttonStyle} onClick={() => {if (window.confirm('Are you sure you wish to delete this item?')) props.onDeleteAPost(props.id)}}>Delete Post</button>
