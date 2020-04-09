@@ -23,13 +23,17 @@
 }
 
 .loginButton {
-  font-size: 2vh;
+  font-size: 3vh;
   margin-top: 1.75vh;
-  border-radius: 1vh;
   padding: 1%;
+  padding-top: .3%;
+  padding-bottom: .3%;
+  background-color: $theoremBlack;
+  color: white;
+  border: 3px solid $theoremBlack;
 }
 
 .loginButton:hover{
-  background-color: #262626;
-  color: white;
+  color: $theoremBlack;
+  background-color: white;
 }

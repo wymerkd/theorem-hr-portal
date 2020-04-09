@@ -31,12 +31,13 @@
     font-size: 6vh; }
 
 .container {
-  text-align: center; }
+  text-align: center;
+  font-family: "Source Sans Pro", Sans-serif; }
 
 .feedbackHeader {
   color: #262626;
   padding-bottom: 2%;
-  font-size: 3.5em; }
+  font-size: 6vh; }
 
 .subjectContainer {
   padding-bottom: 1%; }
@@ -44,22 +45,27 @@
 .subjectField {
   width: 19vw;
   margin-bottom: 0.5%;
-  font-size: 1.5em; }
+  font-size: 3vh;
+  background-color: #f3f3f3; }
 
 .contentField {
   width: 19vw;
   height: 25vh;
   margin-bottom: 1%;
-  font-size: 1.5em; }
+  font-size: 3vh;
+  background-color: #f3f3f3; }
 
 .button {
-  font-size: 1.75em;
-  border-radius: 20px;
-  padding: 1.5%; }
+  font-size: 3vh;
+  padding: 1%;
+  width: 9vw;
+  background-color: #262626;
+  color: white;
+  border: 3px solid #262626; }
 
 .button:hover {
-  background-color: #262626;
-  color: white; }
+  color: #262626;
+  background-color: white; }
 
 .quickLinks {
   color: #262626;
@@ -80,16 +86,59 @@
   color: #262626; }
 
 .toggleButton {
-  background-color: #f3f3f3 !important;
-  color: #262626 !important; }
+  background-color: #f3f3f3;
+  color: #262626;
+  border-color: rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+  padding: 1.5%; }
   .toggleButton:hover {
-    background-color: #262626 !important;
-    color: #f3f3f3 !important; }
+    background-color: #262626;
+    color: #f3f3f3; }
 
 .deleteButton {
-  background-color: #c10606 !important;
-  color: #f3f3f3 !important; }
+  background-color: #c10606;
+  color: #f3f3f3;
+  border-color: rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+  padding: 1.5%; }
+  .deleteButton:hover {
+    background-color: #d00505; }
 
 .card {
-  min-width: 30vw !important;
-  max-width: 30vw; }
+  text-align: left;
+  border: none !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.125) !important;
+  margin-top: 1rem !important; }
+
+.card-body {
+  padding-left: 5% !important; }
+
+.feedback {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: none;
+  padding: 1rem;
+  background-color: #262626;
+  color: #ffff;
+  font-family: "Source Sans Pro", Sans-serif;
+  font-size: 1.1em; }
+
+.feedbackBody {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: none;
+  padding: .8rem;
+  font-family: "Source Sans Pro", Sans-serif;
+  font-size: 1.1em; }
+  .feedbackBody:hover {
+    background-color: #f3f3f3; }
+
+.inbox {
+  margin: 2% 5% 0 5%; }
+
+.inbox .row:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+
+.dropdown {
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+  font-family: "Source Sans Pro", Sans-serif;
+  font-size: 1.1em; }
