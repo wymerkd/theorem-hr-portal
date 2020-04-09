@@ -44,7 +44,61 @@ password: test1
 * _The application allows the user to view personal employee information and create anonymous feedback for hr._
 * _This application also allows admin users the additional ability to view and delete anonymous feedback._
 
+## Folder Structure
 
+```
+/Theorem-HR-Portal/
+|-- /node_modules/                      # Node Modules
+|
+|-- /public/                            # Public Files
+|   |-- favicon.icon
+|   |-- index.html
+|   |-- manifest.json
+|   |-- robots.txt
+|
+|-- /src/                               # Source files
+|   |-- /components/
+|       |-- AdminView.jsx               #
+|       |-- EmployeeDetail.jsx          #
+|       |-- EmployeeHome.jsx            #
+|       |-- FeedbackSubmit.jsx          #           
+|       |-- Header.jsx                  #
+|       |-- LoggedInHeader.jsx          #
+|       |-- LoggedOutHeader.jsx         #
+|       |-- LoginPage.jsx               #
+|       |-- QuickLinks.jsx              #
+|       |-- TimeOffRequest.jsx          #
+
+|   |-- /css/             
+||      -- style.css                    # Compiled styles for production              
+|   |-- /scss/
+|       |-- _adminView.scss             #
+|       |-- _employeeDetail.scss        #  
+|       |-- _employeeHome.scss          #  
+|       |-- _feedbackSubmit.scss        #                  
+|       |-- _header.scss                #
+|       |-- _loggedInHeader.scss        #  
+|       |-- _loggedOutHeader.scss       # 
+|       |-- _loginPage.scss             #
+|       |-- _quickLinks.scss            #
+|       |-- _timeOffRequest.scss        #
+|       |-- _variables.scss             # Theorem color pallette and fonts
+|       |-- style.scss                  # Compiled scss files for css conversion
+|   App.js                              # 
+|   App.scss                            # 
+|   App.test.js                         # 
+|   index.js                            # 
+|   index.scss                          # 
+|   logo.svg                            # 
+|   serviceWorker.js                    # 
+|   setupTests.js                       # 
+|   test_json_object.js                 # 
+|   .gitignore                          # 
+|   package.json                        #
+|   package-lock.json                   #
+|   README.md                           #
+|   yarn.lock                           #
+```
 
 
 ## Support and contact details
