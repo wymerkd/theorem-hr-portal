@@ -16,52 +16,44 @@ export default function AdminView(props) {
 
   return (
     // Short circuit evaluation displays corresponding div depending on result of feedback condition
-    <div>
+    <div className="container inbox">
       {/* Displays if feedback is present */}
-      {isFeedbackPresent && <Table hover>
-        <thead>
-          <tr>
-            <th>Subject</th>
-            <th>Date</th>
-            <th>Messages: {feedback.length}</th>
-            <th></th>
-          </tr>
-        </thead>
+        <div className="row feedback">
+          <div className="col-sm">Subject</div>
+          <div className="col-sm">Date</div>
+          <div className="col-sm">Inbox: {feedback.length}</div>
+          <div className="col-sm"></div>
+        </div>
+      {isFeedbackPresent && <div>
         {feedback.map((item, index) => {
-          return <tbody key={index}>
-            <tr>
-              <td>{item.subject}</td>
-              <td>{item.date.toString().slice(0, 21)}</td>
-              <td><Button className="toggleButton" id={`item${item.feedbackid}`}>View Content</Button></td>
-              <td><Button className="deleteButton" onClick={() => {if (window.confirm('Are you sure you wish to delete this item?')) props.onHandleDelete(item.feedbackid)}} >Delete</Button></td>
-            </tr>
-            <span>
-            <tr>
-              <UncontrolledCollapse toggler={`#item${item.feedbackid}`}>
-                <Card>
-                  <CardBody>
+
+          return <div>
+            <div className="row feedbackBody" key={index}>
+              <div className="col-sm">{item.subject}</div>
+              <div className="col-sm">{item.date.toString().slice(0, 21)}</div>
+              <div className="col-sm"><button className="toggleButton" id={`item${item.feedbackid}`}>View Content</button></div>
+              <div className="col-sm"><button className="deleteButton" onClick={() => {if (window.confirm('Are you sure you wish to delete this item?')) props.onHandleDelete(item.feedbackid)}} >Delete</button></div>
+            </div>
+            <div className="row dropdown">
+              <div className="col-xl-12 noPadding">
+                <UncontrolledCollapse toggler={`#item${item.feedbackid}`}>
+                  <Card>
+                    <CardBody>
                     <p>{item.content}</p>
-                  </CardBody>
-                </Card>
-              </UncontrolledCollapse>
-              </tr>
-            </span>
-          </tbody>
+                    </CardBody>
+                  </Card>
+                </UncontrolledCollapse>
+              </div>
+            </div>
+          </div>
         })}
-      </Table>}
+      </div>}
       {/* Displays if there is no feedback */}
-      {!isFeedbackPresent && <Table>
-        <thead>
-          <tr>
-            <th>Employee Feedback</th>
-          </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>There is currently no employee feedback.</td>
-          </tr>
-        </tbody>
-      </Table>}
+      {!isFeedbackPresent && <div>
+        <div className="row feedbackBody">
+          <div className="col-xl">There is currently no employee feedback.</div>
+        </div>
+      </div>}
     </div>
   );
 }

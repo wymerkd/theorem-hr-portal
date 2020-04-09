@@ -3,21 +3,76 @@
 
 //!important rule used to override built in reactstrap styles 
 .toggleButton {
-  background-color: $theoremLightGrey !important;
-  color: $theoremBlack !important;
+  background-color: $theoremLightGrey;
+  color: $theoremBlack;
+  border-color: rgba(0, 0, 0, .125);
+  border-radius: 5px;
+  padding: 1.5%;
   
   &:hover {
-    background-color: $theoremBlack !important;
-    color: $theoremLightGrey !important;
+    background-color: $theoremBlack;
+    color: $theoremLightGrey;
   }
 }
 
 .deleteButton {
-  background-color:rgb(193, 6, 6) !important;
-  color: $theoremLightGrey !important;
+  background-color:rgb(193, 6, 6);
+  color: $theoremLightGrey;
+  border-color: rgba(0, 0, 0, .125);
+  border-radius: 5px;
+  padding: 1.5%;
+
+   &:hover {
+    background-color: rgb(208, 5, 5);
+   }
 }
 
 .card {
-  min-width: 30vw!important;
-  max-width: 30vw;
+  text-align: left;
+  border: none!important;
+  border-top: 1px solid rgba(0, 0, 0, .125)!important;
+  margin-top: 1rem !important;
 }
+
+.card-body {
+  padding-left: 5%!important;
+}
+
+.feedback {
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-bottom: none;
+  padding: 1rem;
+  background-color: $theoremBlack;
+  color: $theoremWhite;
+  font-family: $theoremFont;
+  font-size: 1.1em;
+}
+
+.feedbackBody {
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-bottom: none;
+  padding: .8rem;
+  font-family: $theoremFont;
+  font-size: 1.1em;
+    
+  &:hover {
+    background-color: $theoremLightGrey;
+  }
+}
+
+.inbox:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.dropdown {
+  border-left: 1px solid rgba(0, 0, 0, .125);
+  border-right: 1px solid rgba(0, 0, 0, .125);
+  font-family: $theoremFont;
+  font-size: 1.1em;
+}
+
+.noPadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
