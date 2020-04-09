@@ -90,12 +90,22 @@ class App extends React.Component {
     }
   }
 
-  //function to delete employee feedback from masterEmployeeFeedbackList. Called in AdminView.jsx
-  onHandleDelete = (index, e) => {
-    const updatedFeedbackList = this.state.employeeFeedback
-    updatedFeedbackList.splice(index, 1)
-    this.setState({employeeFeedback: updatedFeedbackList})
+  // function to delete employee feedback from masterEmployeeFeedbackList. Called in AdminView.jsx
+
+
+  // onHandleDelete will need to be totally re-written once there is a backend for this. Will be a DELETE on API.
+
+  onHandleDelete = async (feedbackid) => {
+    let copyEmployeeFeedback = this.state.employeeFeedback;
+    let remainingFeedback = await copyEmployeeFeedback.filter(function(feedback){
+      return feedback.feedbackid !== feedbackid });
+
+    await this.setState({employeeFeedback: remainingFeedback});
+    console.log(feedbackid);
+    console.log(remainingFeedback)
   }
+
+
 
   render(){
 
