@@ -3,31 +3,30 @@
 .loginHeader{
   color: #262626;
   padding-bottom: 3%;
-  font-size: 3.5em;
+  font-size: 4vh;
 }
 
 
 .emailField{
   margin-bottom: 2vh;
-  width: 9vw;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 3vh;
+  background-color: $theoremLightGrey;
 }
 
 .passwordField{
   margin-bottom: 2vh;
   margin-top: 3vh;
-  width: 9vw;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 3vh;
+  background-color: $theoremLightGrey;
 }
 
 .loginButton {
-  font-size: 1.75em;
+  font-size: 2vh;
   margin-top: 1.75vh;
-  border-radius: 20px;
+  border-radius: 1vh;
   padding: 1%;
-  width: 4vw;
 }
 
 .loginButton:hover{
