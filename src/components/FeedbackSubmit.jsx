@@ -40,7 +40,7 @@ function handleNewFeedbackSubmission(event) {
                 ref={(input) => {_content = input;}}/>
               </div>
 
-              <div>  <button className="button" type='submit'>Submit Feedback</button> </div>
+              <div>  <button className="button" type='submit'>Submit</button> </div>
             </form>
 
           </div>
