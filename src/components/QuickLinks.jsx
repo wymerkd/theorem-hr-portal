@@ -6,6 +6,7 @@ function QuickLinks(){
   return(
     <div className='quickLinks'>
       <h3>Quick Links</h3>
+      <hr/>
       <p>Holiday PTO Calendar</p>
       <p>Policies & Procedures</p>
       <p>401k Documentation</p>
