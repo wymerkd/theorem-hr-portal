@@ -1,5 +1,15 @@
 # _Theorem Human Resources Portal_
 
+## Core Function Definition and Execution Table (Does not include callbacks)
+
+| Function Name           | Defined  | Executed           | Explanation                                |
+|:----------------------: |:--------:| :-----------------:| :-----------------------------------------:|
+| componentDidMount       | App.js   | App.js             | gets all data for all employees            |
+| handleAddingNewFeedback | App.js   | FeedbackSubmit.jsx | Adds new feedback, sends notification email|
+| handleLogin             | App.js   | LoginPage.jsx      | logs employee in                           |
+| handleLogout            | App.js   | Header.jsx         | logs employee out                          |
+| onHandleDelete          | App.js   | AdminView.jsx      | deletes clicked piece of feedback          |
+
 
 
 
@@ -21,7 +31,7 @@
 * _$ npm run start (browser will open to localhost:3000)_  
 
 * _$ npm run scss (if editing, needed to translate scss)_  
-  
+
 ### Test User Account  
 * email: jim@theorem.com  
 password: test1  
@@ -29,7 +39,7 @@ password: test1
 
 ## Specs
 
-* _The application allows the user to view personal employee information and create anonymous feedback for hr._ 
+* _The application allows the user to view personal employee information and create anonymous feedback for hr._
 * _This application also allows admin users the additional ability to view and delete anonymous feedback._
 
 
