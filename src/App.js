@@ -34,7 +34,7 @@ class App extends React.Component {
     await  this.setState({masterEmployeeList: masterList})
 
     // test selected employee for testing
-    await  this.setState({selectedEmployee: masterList[3]})
+    await  this.setState({})
     await  console.log('state: ', this.state);
 
   }
