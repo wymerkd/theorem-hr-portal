@@ -3,7 +3,6 @@ import '../scss/_loggedInHeader.scss'
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-//need to add a log out button
 
 export default function LoggedInHeader(props){
 
