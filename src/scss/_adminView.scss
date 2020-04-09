@@ -60,7 +60,11 @@
   }
 }
 
-.inbox:last-child {
+.inbox {
+  margin: 0 5% 0 5%;
+}
+
+.inbox .row:last-child {
   border-bottom: 1px solid rgba(0, 0, 0, .125);
 }
 
@@ -71,8 +75,4 @@
   font-size: 1.1em;
 }
 
-.noPadding {
-  padding: 0 !important;
-  margin: 0 !important;
-}
 
