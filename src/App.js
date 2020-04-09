@@ -90,6 +90,12 @@ class App extends React.Component {
     }
   }
 
+  //function to delete employee feedback from masterEmployeeFeedbackList. Called in AdminView.jsx
+  onHandleDelete = (index, e) => {
+    const updatedFeedbackList = this.state.employeeFeedback
+    updatedFeedbackList.splice(index, 1)
+    this.setState({employeeFeedback: updatedFeedbackList})
+  }
 
   render(){
 
@@ -102,10 +108,7 @@ class App extends React.Component {
           <Route exact path="/employeehome" render={()=><EmployeeHome selectedEmployee={this.state.selectedEmployee}/>}/>
           <Route exact path="/login" render={()=><LoginPage
           selectedEmployee={this.state.selectedEmployee}login={this.state.login} onHandleLogin={this.handleLogin}/>}/>
-          <Route exact path="/adminview" render={() => <AdminView masterEmployeeFeedbackList={this.state.employeeFeedback} />} />
-
-
-
+          <Route exact path="/adminview" render={() => <AdminView masterEmployeeFeedbackList={this.state.employeeFeedback} onHandleDelete={this.onHandleDelete} />} />
 
         </Switch>
       </div>
