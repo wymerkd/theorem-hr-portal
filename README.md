@@ -1,5 +1,11 @@
 # _Theorem Human Resources Portal_
 
+#### By _**Joshua Forman, Marcus Jensen, and Kyle Wymer**_
+
+## Description
+
+#### _This is an application for accessing hr materials, submitting hr feedback, and viewing personal employee information._
+
 ## Core Function Definition and Execution Table (Does not include callbacks)
 
 | Function Name           | Defined  | Executed           | Explanation                                |
@@ -11,13 +17,9 @@
 | onHandleDelete          | App.js   | AdminView.jsx      | deletes clicked piece of feedback          |
 
 
+##Feedback Notification emails
 
-
-#### By _**Joshua Forman, Marcus Jensen, and Kyle Wymer**_
-
-## Description
-
-#### _This is an application for accessing hr materials, submitting hr feedback, and viewing personal employee information._
+_Are powered by emailJS. Today, all of the emails are being sent from and to theorem.feedback@gmail.com. This email can be adjusted when application is put into use._
 
 
 ## Setup/Installation Requirements
