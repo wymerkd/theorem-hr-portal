@@ -11,6 +11,12 @@
   margin-bottom: 2vh;
   text-align: center;
 
+  font-size: 1.25em;
+
+  font-size: 3vh;
+  background-color: $theoremLightGrey;
+
+
   font-size: 3vh;
   background-color: $theoremLightGrey;
 }
@@ -19,6 +25,11 @@
   margin-bottom: 2vh;
   margin-top: 3vh;
   text-align: center;
+  font-size: 1.25em;
+}
+
+.loginButton {
+  font-size: 1.25em;
 
   font-size: 3vh;
   background-color: $theoremLightGrey;
@@ -26,7 +37,6 @@
 
 .loginButton {
   font-size: 2vh;
-
   margin-top: 1.75vh;
   border-radius: 1vh;
   padding: 1%;
