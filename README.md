@@ -88,7 +88,7 @@ password: test1
 |       |-- AdminView.jsx               #
 |       |-- EmployeeDetail.jsx          #
 |       |-- EmployeeHome.jsx            #
-|       |-- FeedbackSubmit.jsx          #          
+|       |-- FeedbackSubmit.jsx          # View allowing an employee to submit anonymous feedback          
 |       |-- Header.jsx                  # Renders LoggedInHeader/LoggedOutHeader conditionally
 |       |-- LoggedInHeader.jsx          # Header if the user is logged in
 |       |-- LoggedOutHeader.jsx         # Header if the user is logged out
@@ -134,7 +134,7 @@ _For any questions, comments or contributions please contact Josh Forman (cyborg
 
 ## Technologies Used
 
-_React_
+_React, emailJS, SCSS, CSS_
 
 ### License
 
