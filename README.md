@@ -60,7 +60,8 @@ _Are powered by emailJS. Today, all of the emails are being sent from and to the
 
 * _$ npm run scss (if editing, needed to translate scss)_  
 
-### Test User Account  
+### Test User Account
+
 * email: jim@theorem.com  
 password: test1  
 
@@ -88,10 +89,10 @@ password: test1
 |       |-- EmployeeDetail.jsx          #
 |       |-- EmployeeHome.jsx            #
 |       |-- FeedbackSubmit.jsx          #          
-|       |-- Header.jsx                  #
-|       |-- LoggedInHeader.jsx          #
-|       |-- LoggedOutHeader.jsx         #
-|       |-- LoginPage.jsx               #
+|       |-- Header.jsx                  # Renders LoggedInHeader/LoggedOutHeader conditionally
+|       |-- LoggedInHeader.jsx          # Header if the user is logged in
+|       |-- LoggedOutHeader.jsx         # Header if the user is logged out
+|       |-- LoginPage.jsx               # View where an employee can login
 |       |-- QuickLinks.jsx              #
 |       |-- TimeOffRequest.jsx          #
 
@@ -110,7 +111,7 @@ password: test1
 |       |-- _timeOffRequest.scss        #
 |       |-- _variables.scss             # Theorem color pallette and fonts
 |       |-- style.scss                  # Compiled scss files for css conversion
-|   App.js                              #
+|   App.js                              # Core Functions + Routing + State
 |   App.scss                            #
 |   App.test.js                         #
 |   index.js                            #
