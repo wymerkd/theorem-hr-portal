@@ -77,13 +77,12 @@
     font-weight: 400; }
   .quickLinks p:hover {
     font-weight: 400; }
-
-.feedbackLink {
-  color: #262626; }
-  .feedbackLink:hover {
-    text-decoration: none;
-    color: #262626;
-    font-weight: 400; }
+  .quickLinks .feedbackLink {
+    color: #262626; }
+    .quickLinks .feedbackLink:hover {
+      text-decoration: none;
+      color: #262626;
+      font-weight: 400; }
 
 .inbox {
   margin: 2% 5% 0 5%; }
