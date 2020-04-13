@@ -20,13 +20,8 @@ export default function LoggedInHeader(props){
       <Link className="noUnderline" to="/adminview"> Admin View</Link>
       <Link className="noUnderline" to="/employeehome"> Employee Home </Link>
       <Link className="noUnderline" onClick={logoutCallback} to="/"> Log Out {props.selectedEmployee.fullName}</Link>
-      
     </div>
-
-
   </div>
-
-
   )
 }
 

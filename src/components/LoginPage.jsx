@@ -44,20 +44,15 @@ if (props.login === false){
                 placeholder="Your Password"
                 ref={(input) => {_password = input;}}/>
               </div>
-
               <div>
-
                   <button
                   className="loginButton"
                   type='submit'
                   >
                   Login
                   </button>
-
-
               </div>
             </form>
-
           </div>
         </div>
 
@@ -74,4 +69,4 @@ LoginPage.propTypes = {
   selectedEmployee: PropTypes.object
 };
 
-//need to import a function that sends feedback to email address, and to kyle's admin view component
+
