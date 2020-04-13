@@ -14,13 +14,12 @@
     font-size: 3vh; }
   .employeeDetail .employeeAttribute {
     font-weight: 300; }
-
-.triangle {
-  height: 8vh;
-  float: right;
-  position: absolute;
-  right: 2vw;
-  top: 1vh; }
+  .employeeDetail .triangle {
+    height: 8vh;
+    float: right;
+    position: absolute;
+    right: 2vw;
+    top: 1vh; }
 
 .employeeHome {
   display: inline-block;
