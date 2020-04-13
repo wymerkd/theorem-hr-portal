@@ -1,45 +1,53 @@
 @import 'variables';
 
-.container{
+.container {
   text-align: center;
   font-family: $theoremFont;
+  
+  .feedbackHeader {
+    color: #262626;
+    padding-bottom: 2%;
+    font-size: 6vh;
+  }
+
+  .subjectContainer {
+    padding-bottom: 1%;
+
+    .subjectField {
+      width: 19vw;
+      margin-bottom: 0.5%;
+      font-size: 3vh;
+      background-color: $theoremLightGrey;
+    }
+  }
+
+  .contentField {
+    width: 19vw;
+    height: 25vh;
+    margin-bottom: 1%;
+    font-size: 3vh;
+    background-color: $theoremLightGrey;
+  }
+
+  .button {
+    font-size: 3vh;
+    padding: 1%;
+    width: 9vw;
+    background-color: $theoremBlack;
+    color: white;
+    border: 3px solid $theoremBlack;
+
+    &:hover {
+      color: $theoremBlack;
+      background-color: white;
+    }
+  }
 }
 
-.feedbackHeader{
-  color: #262626;
-  padding-bottom: 2%;
-  font-size: 6vh;
-}
 
-.subjectContainer{
-  padding-bottom: 1%;
-}
 
-.subjectField{
-  width: 19vw;
-  margin-bottom: 0.5%;
-  font-size: 3vh;
-  background-color: $theoremLightGrey;
-}
 
-.contentField{
-  width: 19vw;
-  height: 25vh;
-  margin-bottom: 1%;
-  font-size: 3vh;
-  background-color: $theoremLightGrey;
-}
 
-.button {
-  font-size: 3vh;
-  padding: 1%;
-  width: 9vw;
-  background-color: $theoremBlack;
-  color: white;
-  border: 3px solid $theoremBlack;
-}
 
-.button:hover{
-  color: $theoremBlack;
-  background-color: white;
-}
+
+
