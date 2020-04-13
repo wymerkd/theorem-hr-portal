@@ -6,7 +6,6 @@
   font-size: 4vh;
 }
 
-
 .emailField{
   margin-bottom: 2vh;
   text-align: center;
@@ -31,9 +30,11 @@
   background-color: $theoremBlack;
   color: white;
   border: 3px solid $theoremBlack;
+  
+  &:hover{
+    color: $theoremBlack;
+    background-color: white;
+  }
 }
 
-.loginButton:hover{
-  color: $theoremBlack;
-  background-color: white;
-}
+

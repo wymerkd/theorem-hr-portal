@@ -1,14 +1,14 @@
 @import 'variables';
 
-.employeeHome{
+.employeeHome {
   display: inline-block;
   width: 100vw;
-}
-
-.employeeNameWrapper{
-  font-family: $theoremFont;
-
-  h1{
-    font-size: 6vh;
+  
+  .employeeNameWrapper { 
+    font-family: $theoremFont;
+  
+    h1{
+      font-size: 6vh;
+    }
   }
 }
